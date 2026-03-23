@@ -15,7 +15,7 @@ IoCAT works with standard Excel files (.xlsx) which can be downloaded in the app
 | first_name | first name of the patient |
 | birth_date | Date of birth (DD/MM/YYYY) |
 | date_of_visit | Date of visit (DD/MM/YYYY) |
-| gender | Male ou Female |
+| gender | Woman (W) or Man (M) |
 | weight_kg | weight in kg |
 | height_cm | size in cm |
 | eGFR | estimated GFR |
