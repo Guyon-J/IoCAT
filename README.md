@@ -37,7 +37,7 @@ IoCAT was created at the Faculty of Medical Sciences of the [University of Borde
 
 ## Copyright
 [![License](https://img.shields.io/badge/Licence-GPL%20v3.0-orange.svg)]
-Iohexol_clearance is licensed under the [GNU General Public License (GPL) v3.0](https://github.com/Guyon-J/iohexol_clearance/blob/main/LICENSE). In a nutshell, this means that this package:
+IoCAT is licensed under the [GNU General Public License (GPL) v3.0](https://github.com/Guyon-J/iohexol_clearance/blob/main/LICENSE). In a nutshell, this means that this package:
 
 - May be used for commercial purposes and private purposes
 
