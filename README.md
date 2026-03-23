@@ -58,7 +58,9 @@ df <- data.frame(Time, Conc)
 
 The main advantage of this application is that it enables you to visualize both the linear regression and the residuals, making it easier to identify outliers.
 In addition, using data from the literature, it is possible to visualize the patient’s status based on their age and expected GFR, as well as to evaluate their kidney function.
+Finally, all results can be exported as a PNG or TIFF file
 
+<img src="https://github.com/Guyon-J/IoCAT/blob/main/Images/UI.png" width="800">
 
 ## Author
 
