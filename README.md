@@ -7,9 +7,7 @@ Iohexol Clearance Analysis Tool (IoCAT) was built in [R](https://www.r-project.o
 ## Input type for IoCAT calculation
 IoCAT works with standard Excel files (.xlsx) which can be downloaded in the app
 
-<img src="[assets/img.png](https://github.com/Guyon-J/IoCAT/blob/main/Images/Template.png)" alt="description" width="300"> 
-
-
+![Template]([https://raw.githubusercontent.com/user/repo/main/images/logo.png](https://github.com/Guyon-J/IoCAT/blob/main/Images/Template.png))
 
 ### Input variables for **IoCAT**
 #### Data
