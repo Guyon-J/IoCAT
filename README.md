@@ -1,6 +1,10 @@
 # IoCAT
 Iohexol Clearance Analysis Tool (IoCAT) is a visualisation tool for calculating the GFR based on the terminal plasma clearance of iohexol
 
+To cite the tool : <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.19186448.svg" width="200">
+
+
+
 ## Prerequisites for using IoCAT
 IoCAT was built in [R](https://www.r-project.org) , an open source programming language using the [Shiny package](https://shiny.rstudio.com), a web application framework for R. All required code can be found in this github repository.
 
