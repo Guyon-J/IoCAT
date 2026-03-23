@@ -33,8 +33,6 @@ IoCAT works with standard Excel files (.xlsx) which can be downloaded in the app
 
 Once your data has been loaded, it will be transformed for analysis. 
 
-<img src="https://github.com/Guyon-J/IoCAT/blob/main/Images/UI.png" width="600">
-
 #### Formula
 
 Conversion of concentrations to ln(concentrations)
@@ -44,7 +42,7 @@ df <- data.frame(Time, Conc)
 
 | Info             	| Detail                                                                           	|
 |----------------------	|----------------------------------------------------------------------------------	|
-| Body Surface Area (BSA) | $$0.007184 \times \text{Weight}^{0.425} \times \text{Height}^{0.725}$$ (Dubois & Dubois) |
+| Body Surface Area (BSA) | $$0.007184 \times \text{Weight}^{0.425} \times \text{Height}^{0.725}$$ (Dubois & Dubois formula) |
 | Body Mass Index (BMI) | $$\frac{Weight}{(Height / 100)^2}$$ |
 |  |  |
 | Linear model | model = lm(Conc ~ Time, data = df) |
@@ -55,6 +53,11 @@ df <- data.frame(Time, Conc)
 | Iohexol clearance | $$Cl = Dose / AUC$$ |
 | Brochner-Mortensen correction | $$GFR = (Cl \times 0.990778) - (0.001218 \times Cl^2)$$ |
 | Normalized Cl | $$GFR_n = GFR / BSA * 1.73$$ |
+
+#### Displaying results
+
+The main advantage of this application is that it enables you to visualize both the linear regression and the residuals, making it easier to identify outliers.
+In addition, using data from the literature, it is possible to visualize the patient’s status based on their age and expected GFR, as well as to evaluate their kidney function.
 
 
 ## Author
