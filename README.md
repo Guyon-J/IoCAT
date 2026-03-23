@@ -23,8 +23,8 @@ IoCAT works with standard Excel files (.xlsx) which can be downloaded in the app
 | eGFR | estimated GFR |
 |  |  |
 | iodine_mg_ml | Omnipaque formulation : 140, 180, 240, 300 or 350 |
-| preinjection_g | Weight of full syringe (in mg) |
-| postinjection_g | Weight of empty syringe (in mg) |
+| preinjection_g | Weight of full syringe (in g) |
+| postinjection_g | Weight of empty syringe (in g) |
 | injected_vol_ml | Injected volume (in mL) |
 |  |  |
 | time_0_raw | injection time (in min)  |
