@@ -5,7 +5,7 @@ A Shiny app for calculating the GFR based on the terminal plasma clearance of io
 Iohexol Clearance Analysis Tool (IoCAT) was built in [R](https://www.r-project.org) , an open source programming language using the [Shiny package](https://shiny.rstudio.com), a web application framework for R. All required code can be found in this github repository.
 
 ## Input type for Iohexol_clearance calculation
-IoCAT works with standard Excel files (.xlsx) which can be found [here](https://github.com/Guyon-J/iohexol_clearance/raw/refs/heads/main/iohexol_information.xlsx)
+IoCAT works with standard Excel files (.xlsx) which can be downloaded in the app
 
 ### Input variables for **Iohexol_clearance**
 #### Data
