@@ -63,7 +63,6 @@ Finally, all results can be exported as a PNG or TIFF file
 <img src="https://github.com/Guyon-J/IoCAT/blob/main/Images/UI.png" width="800">
 
 ## Author
-
 IoCAT was created at the Faculty of Medical Sciences of the [University of Bordeaux](https://www.u-bordeaux.fr/) by [Joris Guyon](https://orcid.org/0000-0001-6692-2890).
 
 ## Copyright
@@ -83,3 +82,6 @@ IoCAT is licensed under the [GNU General Public License (GPL) v3.0](https://gith
 - Comes with a LIMITATION of liability
 
 - Comes with NO warranty
+
+## Note
+The software is provided “as is,” without warranty of any kind. Under no circumstances shall the author be held liable for any damages, direct or indirect, arising from the use of or inability to use the results produced by this software.
