@@ -19,12 +19,12 @@ IoCAT works with standard Excel files (.xlsx) which can be downloaded in the app
 | weight_kg | weight in kg |
 | height_cm | size in cm |
 | eGFR | estimated GFR |
-
+|  |  |
 | iodine_mg_ml | Omnipaque formulation : 140, 180, 240, 300 or 350 |
 | preinjection_g | Weight of full syringe (in mg) |
 | postinjection_g | Weight of empty syringe (in mg) |
 | injected_vol_ml | Injected volume (in mL) |
-
+|  |  |
 | time_0_raw | injection time (in min)  |
 | times_raw | sampling time (in min)  |
 | concs_raw | Iohexol concentration (in μg/mL or mg/L) at each sampling time point |
