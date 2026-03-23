@@ -35,6 +35,28 @@ Once your data has been loaded, it will be transformed for analysis.
 
 <img src="https://github.com/Guyon-J/IoCAT/blob/main/Images/UI.png" width="600">
 
+#### Formula
+
+Conversion of concentrations to ln(concentrations)
+
+df <- data.frame(Time, Conc)
+
+
+| Info             	| Detail                                                                           	|
+|----------------------	|----------------------------------------------------------------------------------	|
+| Body Surface Area (BSA) | $$0.007184 \times \text{Weight}^{0.425} \times \text{Height}^{0.725}$$ (Dubois & Dubois) |
+| Body Mass Index (BMI) | $$\frac{Weight}{(Height / 100)^2}$$ |
+|  |  |
+| Linear model | model = lm(Conc ~ Time, data = df) |
+|  | $$Intercept = coef(model)[1]$$ -> $$C_0 = e^{Intercept}$$|
+|  | $$Slope = coef(model)[2]$$ -> $$k_e = abs(Slope)$$|
+|  | $$AUC = k_e / C_0$$|
+|  |  |
+| Iohexol clearance | $$Cl = Dose / AUC$$ |
+| Brochner-Mortensen correction | $$GFR = (Cl \times 0.990778) - (0.001218 \times Cl^2)$$ |
+| Normalized Cl | $$GFR_n = GFR / BSA * 1.73$$ |
+
+
 ## Author
 
 IoCAT was created at the Faculty of Medical Sciences of the [University of Bordeaux](https://www.u-bordeaux.fr/) by [Joris Guyon](https://orcid.org/0000-0001-6692-2890).
