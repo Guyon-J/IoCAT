@@ -6,6 +6,7 @@
 required_packages <- c("dplyr",
                        "ggplot2",
                        "openxlsx",
+                       "patchwork",
                        "readxl",
                        "shiny",
                        "shinydashboard")
@@ -21,6 +22,7 @@ rm(new.packages)
 library(dplyr)
 library(ggplot2)
 library(openxlsx)
+library(patchwork)
 library(readxl) 
 library(shiny)
 library(shinydashboard)
