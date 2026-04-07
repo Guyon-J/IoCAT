@@ -129,7 +129,7 @@ ui <- dashboardPage(
           column(4,
                  selectInput("export_format", "Format file", 
                              choices = c("PNG", "TIFF"), 
-                             selected = "PNG")
+                             selected = "TIFF")
           ),
           column(4,
                  numericInput("export_width", "width (px)", 
