@@ -128,16 +128,16 @@ ui <- dashboardPage(
         fluidRow(
           column(4,
                  selectInput("export_format", "Format file", 
-                             choices = c("PNG", "TIFF"), 
-                             selected = "TIFF")
+                             choices = c("PNG", "TIF"), 
+                             selected = "TIF")
           ),
           column(4,
                  numericInput("export_width", "width (px)", 
-                              value = 1000, min = 100)
+                              value = 707, min = 100)
           ),
           column(4,
                  numericInput("export_height", "height (px)", 
-                              value = 850, min = 100)
+                              value = 1000, min = 141.4)
           )
         ),
         fluidRow(
