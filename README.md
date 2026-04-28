@@ -8,6 +8,13 @@ To cite the tool : <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1918644
 ## Prerequisites for using IoCAT
 IoCAT was built in [R](https://www.r-project.org) , an open source programming language using the [Shiny package](https://shiny.rstudio.com), a web application framework for R. All required code can be found in this github repository.
 
+How do I use the app on R studio? Copy and paste the following code:
+  install.packages("shiny")
+  library(shiny)
+  shiny::runGitHub("IoCAT", "Guyon-J")
+  
+Then click “Run”, the web application should be open.
+
 ## Input type for IoCAT calculation
 IoCAT works with standard Excel files (.xlsx) which can be downloaded in the app
 
