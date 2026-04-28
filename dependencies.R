@@ -5,6 +5,7 @@
 # Liste des packages nécessaires
 required_packages <- c("dplyr",
                        "ggplot2",
+                       "magick",
                        "openxlsx",
                        "patchwork",
                        "readxl",
