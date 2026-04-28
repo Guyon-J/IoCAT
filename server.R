@@ -199,9 +199,18 @@ server <- function(input, output, session) {
       width  <- input$export_width
       height <- input$export_height
       if (input$export_format == "PNG") {
-        png(file, width = width*2, height = height*2, units = "px", res = 150)
-      } else if (input$export_format == "TIFF") {
-        tiff(file, width = width*2, height = height*2, units = "px", res = 150)
+        png(file, 
+            width = width*2, 
+            height = height*2, 
+            units = "px", 
+            res = 100)
+      } else if (input$export_format == "TIF") {
+        tiff(file, 
+             width = width*2, 
+             height = height*2, 
+             units = "px", 
+             res = 100,
+             compression = "zip")
       }
       req(input$file)
 
@@ -248,10 +257,36 @@ server <- function(input, output, session) {
       # -------------------------
       # Final assembly
       # -------------------------
-      final_plot <- text_plot / (p1 + p2) / plot_spacer() / p3 +
-        plot_layout(heights = c(3, 3, 0.2, 0.5))
+      final_plot <- plot_spacer()/ text_plot / (p1 + p2) / plot_spacer() / p3 / plot_spacer() +
+        plot_layout(heights = c(1, 4, 3, 0.2, 0.5, 2))
       print(final_plot)
       dev.off()
+
+      t_path <- tempfile(fileext = ".png")
+      
+      tryCatch({
+        ggplot2::ggsave(
+          filename = t_path, 
+          plot = final_plot, 
+          width = input$export_width, 
+          height = input$export_height, 
+          units = "px", 
+          dpi = 72
+        )
+        
+        img <- magick::image_read(t_path)
+        
+        img_optimized <- magick::image_strip(img)
+        
+        magick::image_write(img_optimized, path = file)
+        
+      }, error = function(e) {
+        message("Export error: ", e$message)
+      }, finally = {
+        if (file.exists(t_path)) {
+          file.remove(t_path)
+        }
+      })     
     }
   )
 }
